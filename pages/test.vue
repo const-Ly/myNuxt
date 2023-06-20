@@ -20,8 +20,6 @@ function goBack() {
 useHead({
   title: 'Hello Test',
   titleTemplate: (title) => `${title} | MySite`,
-  // class API support
-  bodyAttrs: { class: { overflow: () => isModalOpen } },
   meta: [
     { name: 'description', content: 'Hello Test' },
   ]
