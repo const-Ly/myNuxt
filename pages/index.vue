@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>我是首页</h1>
+    <h1 class="h1">我是首页</h1>
     <h2>{{ title }}</h2>
     <NuxtLink to="/test">Test</NuxtLink>
     <button @click="toggleModal">isModalOpen</button>
@@ -9,7 +9,7 @@
 
 <script setup>
 import { ref } from "vue"
-const title = ref('我是标题')
+const title = ref('我是标题1')
 let isModalOpen = true
 
 function toggleModal() {
@@ -36,3 +36,12 @@ useHead({
 
 
 </script>
+
+<style>
+
+.h1 {
+  font-size: 12px;
+  color: red;
+}
+
+</style>
